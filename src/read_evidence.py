@@ -209,7 +209,7 @@ class Tabular:
         # Dictionary containing the relevant column names for Xi (False) and
         # Xi_alternative (True)
         col_names = {False: ["FromSite", "ToSite", "PeptidePairID"],
-                     True: ["LinkPos1", "LinkPos2", "PSMID"]}
+                     True: ["LinkPos1", "LinkPos2", iloc[:, 0]]}
         keys = double_attributes["Positions"] + ["Ref"]
         
         params = {}
